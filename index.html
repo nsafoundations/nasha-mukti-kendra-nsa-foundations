@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>NSA Foundations | Nasha Mukti Kendra</title>
+<title>NSA Foundations | Nasha Mukti Kendra & Rehabilitation Centre</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 
-body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#f5f7fa;
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7f9;
+  color: #333;
+}
+h1, h2, h3 {
+  margin: 0;
 }
 
-/* Header */
-header{
-background:#0b5d7a;
-color:white;
-padding:20px;
-text-align:center;
+/* HEADER + NAV */
+header {
+  background: #0b5d7a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+nav {
+  background: #08475e;
+  text-align: center;
+  padding: 12px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: bold;
 }
 
-/* Navigation */
-nav{
-background:#083d52;
-padding:15px;
-text-align:center;
+/* HERO */
+.hero {
+  background: url('https://images.pexels.com/photos/3952237/pexels-photo-3952237.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 42px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.hero p {
+  font-size: 20px;
+  margin-top: 15px;
 }
 
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-weight:bold;
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.section h2 {
+  color: #0b5d7a;
+  margin-bottom: 20px;
 }
 
-/* Hero Section */
-.hero{
-background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("https://images.unsplash.com/photo-1588776814546-ec7e1c7a1f5d");
-background-size:cover;
-color:white;
-padding:120px 20px;
-text-align:center;
+/* SERVICES */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: white;
+  margin: 15px;
+  padding: 25px;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card h3 {
+  color: #08475e;
+  margin-bottom: 10px;
 }
 
-.hero h1{
-font-size:40px;
+/* FACILITIES */
+.facilities img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
-/* Section */
-.section{
-padding:60px 20px;
-text-align:center;
+/* CONTACT */
+.contact-box {
+  background: #0b5d7a;
+  color: white;
+  padding: 40px 20px;
+}
+.contact-box p {
+  font-size: 18px;
 }
 
-/* Cards */
-.container{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-width:280px;
-margin:20px;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-/* Contact */
-.contact{
-background:#0b5d7a;
-color:white;
-padding:40px;
-}
-
-/* Footer */
-footer{
-background:#083d52;
-color:white;
-padding:20px;
-text-align:center;
+/* FOOTER */
+footer {
+  background: #08475e;
+  color: white;
+  text-align: center;
+  padding: 18px 10px;
 }
 
 </style>
@@ -96,62 +111,88 @@ text-align:center;
 <body>
 
 <header>
-<h1>NSA Foundations</h1>
-<p>Trusted Nasha Mukti Kendra in Noida & Delhi NCR</p>
+  <h1>NSA Foundations</h1>
+  <p>Trusted Nasha Mukti Kendra & Rehabilitation Centre – Delhi NCR</p>
 </header>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#facilities">Facilities</a>
+  <a href="#contact">Contact</a>
 </nav>
 
-<!-- Hero -->
+<!-- HERO -->
 <div class="hero">
-<h1>Start Your Recovery Journey Today</h1>
-<p>Professional Drug, Alcohol & Smoking Addiction Treatment</p>
+  <h1>Welcome to NSA Foundations</h1>
+  <p>Professional Drug, Alcohol & Smoking Addiction Treatment</p>
 </div>
 
-<!-- About -->
-<div class="section">
-<h2>About NSA Foundations</h2>
-<p>NSA Foundations provides safe, confidential and professional rehabilitation programs with experienced doctors and counsellors helping patients recover from addiction.</p>
+<!-- ABOUT -->
+<div id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    NSA Foundations is one of the most reputable Nasha Mukti Kendras in Delhi NCR, offering personalised care plans,
+    evidence-based treatment, and a supportive recovery environment to help you or your loved ones live addiction-free.:contentReference[oaicite:1]{index=1}
+  </p>
 </div>
 
-<!-- Services -->
-<div class="section">
-<h2>Our Treatment Services</h2>
+<!-- SERVICES -->
+<div id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
 
-<div class="container">
+    <div class="card">
+      <h3>Alcohol Treatment</h3>
+      <p>Medical detox, therapy, and continuous support for safe recovery.</p>
+    </div>
 
-<div class="card">
-<h3>Drug Addiction Treatment</h3>
-<p>Complete detox and therapy for substance abuse recovery.</p>
+    <div class="card">
+      <h3>Drug Rehabilitation</h3>
+      <p>Structured programmes to help break substance dependence safely.</p>
+    </div>
+
+    <div class="card">
+      <h3>Counselling & Therapy</h3>
+      <p>Professional counselling to address emotional and behavioural issues.</p>
+    </div>
+
+    <div class="card">
+      <h3>Yoga & Meditation</h3>
+      <p>Holistic healing for mind & body to reinforce long-term balance.</p>
+    </div>
+
+  </div>
 </div>
 
-<div class="card">
-<h3>Alcohol Rehabilitation</h3>
-<p>Structured recovery programs with medical supervision.</p>
+<!-- FACILITIES -->
+<div id="facilities" class="section">
+  <h2>Our Facilities</h2>
+  <p>We provide a safe, supportive and comfortable environment for recovery.:contentReference[oaicite:2]{index=2}</p>
+  <div class="cards">
+    <div class="card facilities">
+      <h3>24/7 Medical Care</h3>
+      <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=800">
+      <p>Certified physicians and trained staff available around the clock.</p>
+    </div>
+    <div class="card facilities">
+      <h3>Holistic Wellness</h3>
+      <img src="https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=800">
+      <p>Spaces for yoga, meditation, group activities & emotional healing.</p>
+    </div>
+  </div>
 </div>
 
-<div class="card">
-<h3>Smoking & Tobacco Rehab</h3>
-<p>Effective counselling and recovery treatment.</p>
-</div>
-
-</div>
-</div>
-
-<!-- Contact -->
-<div class="contact">
-<h2>Contact Us</h2>
-<p>📞 8368012681</p>
-<p>📍 Noida | Delhi NCR</p>
+<!-- CONTACT -->
+<div id="contact" class="contact-box">
+  <h2>Contact Us</h2>
+  <p>📞 <strong>8368012681</strong></p>
+  <p>📍 Noida, Delhi NCR, India</p>
+  <p>We’re here 24x7 to support your recovery journey. Call now!</p>
 </div>
 
 <footer>
-<p>© 2026 NSA Foundations Rehabilitation Centre</p>
+  <p>© 2026 NSA Foundations - Rehabilitation & Recovery Services</p>
 </footer>
 
 </body>
