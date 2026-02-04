@@ -1,0 +1,224 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f4f6f5;
+color:#333;
+}
+
+.topbar{
+background:#cfe3dc;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+font-size:14px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:#fff;
+}
+
+.navbar nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+width:50px;
+margin-right:10px;
+}
+
+.btn{
+background:#2f7f66;
+color:#fff;
+padding:8px 18px;
+border-radius:20px;
+text-decoration:none;
+}
+
+.hero{
+height:85vh;
+background:url('hero.jpg') center/cover;
+display:flex;
+align-items:center;
+padding:0 5%;
+color:#fff;
+position:relative;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:48px;
+line-height:1.2;
+}
+
+.btn-light{
+background:#fff;
+color:#2f7f66;
+padding:10px 20px;
+border-radius:20px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
+
+.about{
+display:flex;
+padding:60px 5%;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text h2{
+margin:10px 0;
+}
+
+.stats{
+display:flex;
+gap:30px;
+margin:20px 0;
+}
+
+.services{
+padding:60px 5%;
+text-align:center;
+background:#e8f1ee;
+}
+
+.service-box{
+display:flex;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:15px;
+flex:1;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.why{
+padding:60px 5%;
+text-align:center;
+}
+
+.why-box{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+}
+
+.faq{
+padding:60px 5%;
+background:#e8f1ee;
+}
+
+.faq-item{
+margin-bottom:20px;
+}
+
+.gallery{
+padding:60px 5%;
+text-align:center;
+}
+
+.gallery-box{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+.gallery-box img{
+width:200px;
+border-radius:10px;
+}
+
+.testimonials{
+padding:60px 5%;
+background:#e8f1ee;
+text-align:center;
+}
+
+.testimonial-card{
+background:#fff;
+padding:20px;
+border-radius:15px;
+display:inline-block;
+max-width:500px;
+}
+
+.contact{
+padding:60px 5%;
+text-align:center;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:400px;
+margin:20px auto;
+}
+
+.contact input, .contact textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.contact button{
+background:#2f7f66;
+color:#fff;
+padding:10px;
+border:none;
+border-radius:20px;
+}
+
+footer{
+background:#2f7f66;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
